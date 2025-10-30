@@ -189,8 +189,9 @@ button:focus {
   color: var(--surface);
   line-height: 1.15;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* limit to 2 lines */
   -webkit-box-orient: vertical;
+  line-clamp: 2; /* standard property for compatibility */
+  -webkit-line-clamp: 2; /* limit to 2 lines (WebKit/Blink) */
   overflow: hidden;
   text-overflow: ellipsis;
 }
