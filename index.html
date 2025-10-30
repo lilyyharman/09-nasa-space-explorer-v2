@@ -17,10 +17,26 @@
       <button id="getImageBtn">Fetch Space Images</button>
     </div>
 
+    <!-- Random space fact (shows once per page load) -->
+    <section id="randomFact" class="random-fact" aria-live="polite">
+      <!-- JS will populate this with a random "Did you know?" fact on load -->
+    </section>
+
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Click "Fetch Space Images" to explore the cosmos!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: hidden by default; JS will populate and show it -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- JS will insert the large image, title, date, explanation here -->
       </div>
     </div>
   </div>
